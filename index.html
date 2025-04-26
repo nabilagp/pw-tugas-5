@@ -7,7 +7,6 @@
   <title>Portofolio Nabila</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
   <header>
@@ -52,16 +51,22 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <div class="project-text">
-        <img src="img/dpp.jpg" alt="Project 1" class="project-img" />
-        <p>UX design perencanaan aplikasi berbasis sosial media "Postly: Kreativitas Mengalir, Interaksi Tak Terbatas!” dengan menggunakan Figma. Postly merupakan aplikasi sosial media untuk berbagi pemikiran, ide, dan update singkat dalam bentuk teks (dengan batasan karakter), gambar, atau video pendek dengan kualitas yang tinggi.</p>
-
-        <img src="img/ppic.jpg" alt="Project 2" class="project-img" />
-        <p>Stock Sense adalah rancangan aplikasi menggunakan Figma yang memberikan kemudahan penjual untuk mengelola stok bahan.</p>
-
-        <img src="img/wasling.jpg" alt="Project 3" class="project-img" />
-        <p>Zero Waste Heroes adalah sebuah program aplikasi yang berkomitmen untuk mengurangi limbah, terutama limbah makanan, dengan cara memanfaatkan sisa makanan yang masih layak untuk didonasikan, serta mengolah sisa makanan yang tidak layak dengan cara yang berkelanjutan.</p>
-      </div>
+      <div class="project-container">
+        <div class="project-item">
+          <img src="img/dpp.jpg" alt="Project 1" class="project-img" />
+          <h3>Project 1: Aplikasi Postly</h3>
+          <p>UX design perencanaan aplikasi berbasis sosial media "Postly: Kreativitas Mengalir, Interaksi Tak Terbatas!” dengan menggunakan Figma. Postly merupakan aplikasi sosial media untuk berbagi pemikiran, ide, dan update singkat dalam bentuk teks (dengan batasan karakter), gambar, atau video pendek dengan kualitas yang tinggi.</p>
+        </div>
+        <div class="project-item">
+          <img src="img/ppic.jpg" alt="Project 2" class="project-img" />
+          <h3>Project 2: Aplikasi Stock Sense</h3>
+          <p>Stock Sense adalah rancangan aplikasi menggunakan Figma yang memberikan kemudahan penjual untuk mengelola stok bahan.</p>
+        </div>
+        <div class="project-item">
+          <img src="img/wasling.jpg" alt="Project 3" class="project-img" />
+          <h3>Project 3: Aplikasi Zero Waste Heroes </h3>
+          <p>Zero Waste Heroes adalah sebuah program aplikasi yang berkomitmen untuk mengurangi limbah, terutama limbah makanan, dengan cara memanfaatkan sisa makanan yang masih layak untuk didonasikan, serta mengolah sisa makanan yang tidak layak dengan cara yang berkelanjutan.</p>
+       </div>
     </section>
 
     <div class="media-container">
@@ -71,7 +76,7 @@
           <li>
             <a href="https://www.kompasiana.com/nabilagusniarputri9198/655b4e78ee794a67dc7f1d52/concept-information-systems" style="text-decoration: none; color: #1100ff;">Concept Information Systems</a>
           </li>
-          <p>Artikel ini membahas tentang Sistem informasi yang berperan sebagai jembatan antara aspek teknis (informatika) dan non-teknis (manajemen), serta berhubungan dengan elemen eksternal seperti pemasok, pelanggan, lembaga regulasi, pemegang saham, dan pesaing.</p>
+          <p>Artikel ini membahas tentang Sistem informasi yang berperan sebagai jembatan antara aspek teknis (informatika) dan non-teknis (manajemen).</p>
         </ul>
       </section>
 
@@ -106,11 +111,10 @@
         <input type="text" id="guestName" placeholder="Masukkan nama Anda..." style="flex: 1;" />
         <button type="submit">Tambah</button>
       </form>
-    
+
       <h3>Daftar Nama Tamu:</h3>
       <ul id="guestList" style="list-style: none; padding: 0; margin: 0;"></ul>
     </section>
-
   </main>
 
   <footer>
@@ -124,7 +128,6 @@
     }
   </script>
 
-<script src="tamu.js"></script>
-
+  <script src="tamu.js"></script>
 </body>
 </html>

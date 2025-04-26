@@ -89,7 +89,7 @@ h2 {
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
-  margin: 10px; /* Jarak antar kotak */
+  margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -145,13 +145,22 @@ img {
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-wrap: nowrap; /* Pastikan elemen tidak berpindah ke baris baru */
 }
 
 #guestName {
-  flex: 1; /* Membuat input mengambil ruang yang tersedia */
-  padding: 3px;
+  flex: 1; /* Input mengambil ruang yang tersedia */
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px; /* Ruang dalam tombol */
+  border: none;
+  background-color: #d4bdff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #guestList {
@@ -218,9 +227,5 @@ img {
     flex: 1 1 100% !important;
     max-width: 100% !important;
     margin-left: 0 !important;
-  }
-
-  #guestForm {
-    flex-direction: column; /* Ubah menjadi kolom untuk mobile */
   }
 }

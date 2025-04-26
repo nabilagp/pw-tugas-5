@@ -125,6 +125,27 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
+    .guest-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    
+    .guest-actions {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .done-btn, .delete-btn {
+      cursor: pointer;
+      background-color: #d4bdff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
     @media (max-width: 600px) {
       .menu-toggle {
         display: block;

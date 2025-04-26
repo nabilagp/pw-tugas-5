@@ -84,13 +84,13 @@ h2 {
 }
 
 .project-item {
-  flex: 1 1 calc(33.33% - 20px); /* Mengatur lebar kolom */
-  background-color: #fff; /* Warna latar belakang kotak */
-  border: 1px solid #ccc; /* Garis batas kotak */
-  border-radius: 5px; /* Sudut kotak melengkung */
-  padding: 20px; /* Ruang dalam kotak */
+  flex: 1 1 calc(33.33% - 20px);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
   margin: 10px; /* Jarak antar kotak */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .project-img {
@@ -134,12 +134,41 @@ img {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Buku Tamu */
+#guestbook {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+#guestForm {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#guestName {
+  flex: 1; /* Membuat input mengambil ruang yang tersedia */
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#guestList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .guest-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #ccc;
+  margin: 5px 0;
+  background-color: #fff;
+  border-radius: 5px;
 }
 
 .guest-actions {
@@ -155,6 +184,7 @@ img {
   border-radius: 5px;
 }
 
+/* Media query untuk perangkat mobile */
 @media (max-width: 600px) {
   .menu-toggle {
     display: block;
@@ -188,5 +218,9 @@ img {
     flex: 1 1 100% !important;
     max-width: 100% !important;
     margin-left: 0 !important;
+  }
+
+  #guestForm {
+    flex-direction: column; /* Ubah menjadi kolom untuk mobile */
   }
 }
